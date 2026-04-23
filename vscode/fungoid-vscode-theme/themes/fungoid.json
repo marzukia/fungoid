@@ -215,23 +215,62 @@
       "settings": { "foreground": "#ffbe00" }
     },
     {
-      "scope": ["keyword", "storage", "storage.type", "storage.modifier", "storage.type.function", "storage.type.class", "keyword.control"],
+      "scope": [
+        "keyword",
+        "storage",
+        "storage.type",
+        "storage.modifier",
+        "storage.type.function",
+        "storage.type.class",
+        "keyword.control"
+      ],
       "settings": { "foreground": "#ff7800" }
     },
     {
-      "scope": ["entity.name.function", "entity.name.function.decorator.python", "support.function", "meta.function-call", "meta.definition.method", "entity.name.function.macro.rust"],
+      "scope": [
+        "entity.name.function",
+        "entity.name.function.decorator.python",
+        "support.function",
+        "meta.function-call",
+        "meta.definition.method",
+        "entity.name.function.macro.rust"
+      ],
       "settings": { "foreground": "#3cdc50" }
     },
     {
-      "scope": ["variable", "variable.other", "variable.other.readwrite", "variable.other.object.property", "variable.parameter"],
+      "scope": [
+        "variable",
+        "variable.other",
+        "variable.other.readwrite",
+        "variable.other.object.property",
+        "variable.parameter"
+      ],
       "settings": { "foreground": "#e8e6e3" }
     },
     {
-      "scope": ["variable.language", "variable.other.readwrite.language", "variable.language.this.js", "variable.language.this.ts", "variable.language.python", "variable.language.go", "variable.language.java", "variable.language.rust", "variable.other.special.shell", "variable.other.special.bash"],
+      "scope": [
+        "variable.language",
+        "variable.other.readwrite.language",
+        "variable.language.this.js",
+        "variable.language.this.ts",
+        "variable.language.python",
+        "variable.language.go",
+        "variable.language.java",
+        "variable.language.rust",
+        "variable.other.special.shell",
+        "variable.other.special.bash"
+      ],
       "settings": { "foreground": "#ff7800", "fontStyle": "italic" }
     },
     {
-      "scope": ["constant", "constant.numeric", "constant.language", "constant.character", "constant.other", "variable.other.constant"],
+      "scope": [
+        "constant",
+        "constant.numeric",
+        "constant.language",
+        "constant.character",
+        "constant.other",
+        "variable.other.constant"
+      ],
       "settings": { "foreground": "#ffbe00" }
     },
     {
@@ -239,11 +278,26 @@
       "settings": { "foreground": "#ffbe00" }
     },
     {
-      "scope": ["entity.name", "entity.name.class", "entity.name.type", "entity.other.inherited-class", "entity.name.tag", "meta.tag"],
+      "scope": [
+        "entity.name",
+        "entity.name.class",
+        "entity.name.type",
+        "entity.other.inherited-class",
+        "entity.name.tag",
+        "meta.tag"
+      ],
       "settings": { "foreground": "#ff7800" }
     },
     {
-      "scope": ["support.class", "support.type", "support.class.builtin.js", "support.class.builtin.ts", "support.type.builtin.js", "support.type.builtin.ts", "support.type.builtin.go"],
+      "scope": [
+        "support.class",
+        "support.type",
+        "support.class.builtin.js",
+        "support.class.builtin.ts",
+        "support.type.builtin.js",
+        "support.type.builtin.ts",
+        "support.type.builtin.go"
+      ],
       "settings": { "foreground": "#d966ff" }
     },
     {
@@ -255,11 +309,24 @@
       "settings": { "foreground": "#3cdc50" }
     },
     {
-      "scope": ["keyword.operator", "keyword.operator.arithmetic", "keyword.operator.logical", "keyword.operator.word.cpp", "keyword.operator.word.c"],
+      "scope": [
+        "keyword.operator",
+        "keyword.operator.arithmetic",
+        "keyword.operator.logical",
+        "keyword.operator.word.cpp",
+        "keyword.operator.word.c"
+      ],
       "settings": { "foreground": "#d966ff" }
     },
     {
-      "scope": ["punctuation", "punctuation.definition", "punctuation.terminator", "punctuation.separator", "punctuation.definition.string.begin", "punctuation.definition.string.end"],
+      "scope": [
+        "punctuation",
+        "punctuation.definition",
+        "punctuation.terminator",
+        "punctuation.separator",
+        "punctuation.definition.string.begin",
+        "punctuation.definition.string.end"
+      ],
       "settings": { "foreground": "#a09080" }
     },
     {
@@ -319,7 +386,10 @@
       "settings": { "foreground": "#ff5a5a" }
     },
     {
-      "scope": ["entity.other.attribute-name.class.css", "entity.other.attribute-name.class.scss"],
+      "scope": [
+        "entity.other.attribute-name.class.css",
+        "entity.other.attribute-name.class.scss"
+      ],
       "settings": { "foreground": "#3cdc50" }
     },
     {
@@ -331,7 +401,12 @@
       "settings": { "foreground": "#ff7800" }
     },
     {
-      "scope": ["keyword.other.DML.sql", "keyword.other.DDL.sql", "keyword.other.Dockerfile", "keyword.control.gitignore"],
+      "scope": [
+        "keyword.other.DML.sql",
+        "keyword.other.DDL.sql",
+        "keyword.other.Dockerfile",
+        "keyword.control.gitignore"
+      ],
       "settings": { "foreground": "#ff7800" }
     },
     {
@@ -339,7 +414,30 @@
       "settings": { "foreground": "#ff7800" }
     },
     {
-      "scope": ["source.js", "source.jsx", "source.ts", "source.tsx", "source.rust", "source.go", "source.java", "source.cpp", "source.c", "source.shell", "source.bash", "source.python", "source.json", "source.yaml", "source.toml", "source.html", "source.xml", "source.css", "source.scss", "source.sql", "source.gitignore", "source.dockerfile"],
+      "scope": [
+        "source.js",
+        "source.jsx",
+        "source.ts",
+        "source.tsx",
+        "source.rust",
+        "source.go",
+        "source.java",
+        "source.cpp",
+        "source.c",
+        "source.shell",
+        "source.bash",
+        "source.python",
+        "source.json",
+        "source.yaml",
+        "source.toml",
+        "source.html",
+        "source.xml",
+        "source.css",
+        "source.scss",
+        "source.sql",
+        "source.gitignore",
+        "source.dockerfile"
+      ],
       "settings": { "foreground": "#e8e6e3" }
     }
   ]
