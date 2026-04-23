@@ -1,4 +1,4 @@
-# <img src="assets/logo-header.png" alt="fungoid theme" height="60">
+# <img src="assets/logo-header.png" alt="fungoid theme" height="32">
 
 <div align="center">
 
