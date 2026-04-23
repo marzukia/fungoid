@@ -3,6 +3,7 @@ site_description: A dark, cozy terminal theme for iTerm, Oh My Zsh, and VS Code
 site_author: andryo
 repo_url: https://github.com/marzukia/fungoid
 repo_name: marzukia/fungoid
+docs_dir: docs
 
 theme:
   name: material
