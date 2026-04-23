@@ -222,7 +222,7 @@
     {
       "scope": "string.quoted",
       "settings": {
-        "foreground": "#3cdc50"
+        "foreground": "#a09080"
       }
     },
     {
@@ -318,6 +318,79 @@
     },
     {
       "scope": [
+        "support.class",
+        "support.type",
+        "entity.name.type"
+      ],
+      "settings": {
+        "foreground": "#d966ff"
+      }
+    },
+    {
+      "scope": [
+        "variable.parameter",
+        "variable.other.object.property"
+      ],
+      "settings": {
+        "foreground": "#e8e6e3"
+      }
+    },
+    {
+      "scope": [
+        "meta.decorator",
+        "punctuation.decorator"
+      ],
+      "settings": {
+        "foreground": "#3cdc50"
+      }
+    },
+    {
+      "scope": [
+        "variable.language",
+        "variable.other.readwrite.language"
+      ],
+      "settings": {
+        "foreground": "#ffbe00"
+      }
+    },
+    {
+      "scope": [
+        "entity.name.tag",
+        "meta.tag"
+      ],
+      "settings": {
+        "foreground": "#ff5a5a"
+      }
+    },
+    {
+      "scope": [
+        "entity.other.attribute-name"
+      ],
+      "settings": {
+        "foreground": "#3cdc50"
+      }
+    },
+    {
+      "scope": [
+        "keyword.operator",
+        "keyword.operator.arithmetic",
+        "keyword.operator.logical"
+      ],
+      "settings": {
+        "foreground": "#d966ff"
+      }
+    },
+    {
+      "scope": [
+        "storage.type.function",
+        "storage.type.class"
+      ],
+      "settings": {
+        "foreground": "#ff7800"
+      }
+    },
+    {
+      "scope": [
         "storage.modifier",
         "storage.type"
       ],
@@ -348,10 +421,11 @@
     {
       "scope": [
         "support.class",
-        "support.type"
+        "support.type",
+        "entity.name.type"
       ],
       "settings": {
-        "foreground": "#ff7800"
+        "foreground": "#d966ff"
       }
     },
     {
@@ -393,6 +467,15 @@
       ],
       "settings": {
         "foreground": "#e8e6e3"
+      }
+    },
+    {
+      "scope": [
+        "punctuation.definition.string.begin",
+        "punctuation.definition.string.end"
+      ],
+      "settings": {
+        "foreground": "#a09080"
       }
     },
     {
