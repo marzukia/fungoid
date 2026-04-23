@@ -1,12 +1,14 @@
 # <img src="assets/fungoid.png" alt="fungoid. theme" height="64">
 
-A dark terminal and editor theme with orange (#ff7800) and green (#3cdc50) as dominant brand colors. Designed for developers who want a cohesive aesthetic across their entire development environment.
+A dark terminal and editor theme with orange (#ff7800) and green (#3cdc50) as dominant brand colors. Designed for developers who want a cohesive, across their entire development environment.
 
 ## Screenshots
 
 ![iTerm2 Screenshot](screenshots/iterm2.png)
 ![VSCode Screenshot](screenshots/vscode.png)
+
 ## Features
+
 - **Cohesive Design**: Matching themes for iTerm2, Oh My Zsh, and VSCode
 - **Dracula-Inspired Syntax**: Clear, readable syntax highlighting with custom color palette
 - **Optimized Performance**: Lightweight theme files with no redundant definitions
@@ -101,7 +103,6 @@ fungoid/
 │   ├── package.json
 │   └── README.md
 ├── docs/                     # Documentation
-│   └── channels.md           # Channel setup guides
 ├── assets/                   # Logos and branding
 ├── screenshots/              # Theme screenshots
 ├── CHANGELOG.md              # Version history
@@ -118,10 +119,6 @@ After making changes:
 2. **Zsh**: Copy to `~/.oh-my-zsh/custom/themes/` and test git operations
 3. **VSCode**: Run `vsce package` and install with `code --install-extension`
 
-## Channel Setup
-
-Set up discord, telegram, or nostr integration: [docs/channels.md](docs/channels.md)
-
 ## Contributing
 
 Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
@@ -135,6 +132,5 @@ See [CHANGELOG.md](CHANGELOG.md) for version history.
 MIT License - see [LICENSE](LICENSE) for details.
 
 ## Related Projects
-
 
 - [Dracula Theme](https://draculatheme.com) - Inspiration for syntax highlighting philosophy

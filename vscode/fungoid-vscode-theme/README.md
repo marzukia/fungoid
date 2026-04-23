@@ -22,8 +22,9 @@ A dark theme with orange (#ff7800) and green (#3cdc50) as dominant brand colors,
   - Cyan: `#00d296` (accents, decorations)
   - Purple: `#a855f7` (operators)
   - Muted Grey: `#a09080` (comments, punctuation)
-  - Yellow: `#ffbe00` (secondary highs)
-  - Red: `#ff5a5a` (errors, warnings)
+  - Muted Grey: `#a09080` (comments, punctuation)
+  - Yellow: `#ffbe00` (secondary highlights)
+  - Yellow: `#ffbe00` (secondary highlights)
 
 ## Installation
 
