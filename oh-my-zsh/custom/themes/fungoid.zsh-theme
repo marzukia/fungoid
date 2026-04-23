@@ -8,32 +8,30 @@ ZSH_THEME_FUNGOID_NAME="fungoid"
 
 # Color definitions - bright, visible colors
 # Background/Foreground
-ZSH_THEME_FUNGOID_BG="%K{236}"      # Dark grey bg
-ZSH_THEME_FUNGOID_FG="%F{231}"      # Bright white
+# Background/Foreground (matching vscode)
+ZSH_THEME_FUNGOID_BG="%K{#1e1e1e}"      # Dark grey bg
+ZSH_THEME_FUNGOID_FG="%F{#e8e6e3}"      # Bright white
+# Brand colors - orange and green dominant (matching vscode hex values)
 
-# Brand colors - orange and green dominant
-ZSH_THEME_FUNGOID_ORANGE="%F{214}"  # Bright orange #ff7800
-ZSH_THEME_FUNGOID_GREEN="%F{83}"    # Bright green #3cdc50
-ZSH_THEME_FUNGOID_MUTED="%F{245}"   # Light grey
-ZSH_THEME_FUNGOID_RED="%F{196}"     # True red #ff5a5a
-ZSH_THEME_FUNGOID_YELLOW="%F{220}"  # Bright yellow #ffbe00
-ZSH_THEME_FUNGOID_WHITE="%F{231}"   # White
-
-# Accent colors
-ZSH_THEME_FUNGOID_DISCORD="%F{69}"  # Bright blue
-ZSH_THEME_FUNGOID_TEAL="%F{80}"     # Bright teal
-ZSH_THEME_FUNGOID_BLUE="%F{75}"     # Bright blue
-ZSH_THEME_FUNGOID_MAGENTA="%F{213}" # Bright magenta
-ZSH_THEME_FUNGOID_CYAN="%F{50}"     # Bright cyan
+ZSH_THEME_FUNGOID_ORANGE="%F{#ff7800}"  # Orange
+ZSH_THEME_FUNGOID_GREEN="%F{#3cdc50}"   # Green
+ZSH_THEME_FUNGOID_MUTED="%F{#695541}"   # Brown/grey
+ZSH_THEME_FUNGOID_RED="%F{#ff5a5a}"     # Red
+ZSH_THEME_FUNGOID_YELLOW="%F{#ffbe00}"  # Yellow
+ZSH_THEME_FUNGOID_WHITE="%F{#e8e6e3}"   # White
+# Accent colors (matching vscode hex values)
+ZSH_THEME_FUNGOID_DISCORD="%F{#5865f2}" # Discord blue
+ZSH_THEME_FUNGOID_TEAL="%F{#00d296}"    # Teal
+ZSH_THEME_FUNGOID_BLUE="%F{#5865f2}"    # Blue
+ZSH_THEME_FUNGOID_MAGENTA="%F{#d966ff}" # Magenta
+ZSH_THEME_FUNGOID_CYAN="%F{#00d296}"    # Cyan
 
 # Diff colors
-ZSH_THEME_FUNGOID_DIFF_ADD="%F{70}%K{22}"     # Green on dark forest green
-ZSH_THEME_FUNGOID_DIFF_REMOVE="%F{209}%K{52}" # Light red on dark red
-
-# Code highlighting
-ZSH_THEME_FUNGOID_KEYWORD="%F{220}"   # Bright yellow
-ZSH_THEME_FUNGOID_STRING="%F{71}"     # Green
-
+ZSH_THEME_FUNGOID_DIFF_ADD="%F{#3cdc50}%K{#1e3a1f}"     # Green on dark forest green
+ZSH_THEME_FUNGOID_DIFF_REMOVE="%F{#ff5a5a}%K{#3a0a0a}" # Red on dark red
+# Code highlighting (matching vscode)
+ZSH_THEME_FUNGOID_KEYWORD="%F{#ff7800}"   # Orange (keywords)
+ZSH_THEME_FUNGOID_STRING="%F{#3cdc50}"    # Green (strings)
 # Prompt configuration
 ZSH_THEME_FUNGOID_PROMPT_SYMBOL="»"
 ZSH_THEME_FUNGOID_PROMPT_SECONDARY="»"
