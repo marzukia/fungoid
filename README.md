@@ -1,4 +1,4 @@
-# <img src="assets/fungoid.png" alt="fungoid. theme" >
+# <img src="assets/fungoid.png" alt="fungoid. theme" height='64'>
 
 A dark terminal theme with orange and green as dominant brand colors.
 
