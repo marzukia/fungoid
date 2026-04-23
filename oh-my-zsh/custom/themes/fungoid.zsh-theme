@@ -42,28 +42,51 @@ ZSH_THEME_FUNGOID_PROMPT_SECONDARY="»"
 ZSH_THEME_FUNGOID_USER_PROMPT="%{$ZSH_THEME_FUNGOID_ORANGE%}%n%{$ZSH_THEME_FUNGOID_FG%}@%{$ZSH_THEME_FUNGOID_BLUE%}%m"
 ZSH_THEME_FUNGOID_PATH_PROMPT="%{$ZSH_THEME_FUNGOID_MUTED%}%~"
 ZSH_THEME_FUNGOID_GIT_PROMPT="%{$ZSH_THEME_FUNGOID_TEAL%}$(git_prompt_info)%{$ZSH_THEME_FUNGOID_FG%}"
-ZSH_THEME_FUNGOID_STATUS_PROMPT="%{$ZSH_THEME_FUNGOID_GREEN%}%?%{$ZSH_THEME_FUNGOID_FG%}"
+ZSH_THEME_FUNGOID_TIME_PROMPT="%{$ZSH_THEME_FUNGOID_MUTED%}[%D{%H:%M:%S}]"
 # Register the theme and enable precmd hook
 zstyle ':prompt:fungoid:setup' answer 'yes'
 precmd_functions+=('fungoid_precmd')
 
-# zsh-syntax-highlighting setup instructions:
-# 1. Install: git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-# 2. In ~/.zshrc: plugins=(... zsh-syntax-highlighting)
-# 3. Add to ~/.zshrc after sourcing oh-my-zsh:
-#    source /path/to/fungoid.zsh-theme
-#    ZSH_HIGHLIGHT_STYLES=(
-#      builtin:%F{220}    # yellow like keywords
-#      command:%F{83}     # green like functions
-#      reserved_word:%F{220}   # yellow
-#      word:%F{213}       # magenta
-#      alias:%F{214}      # orange
-#      file:%F{71}        # green
-#      path:%F{245}       # grey
-#      pattern:%F{71}     # green (strings)
-#      argument:%F{50}    # cyan
-#      option:%F{80}      # teal
-#      comment:%F{241}    # dark grey
-#      math:%F{213}       # magenta
-#      unknown_token:%F{245}    # grey
-#    )
+# Add timestamp and git status to precmd
+fungoid_precmd() {
+  # Update git status
+  vcs_info
+}
+
+# Preexec for command timing
+preexec_functions+=('preexec_timer')
+preexec_timer() {
+  TIMER=$(date +%s%N)
+}
+
+precmd_functions+=('precmd_timer')
+precmd_timer() {
+  if [[ -n "$TIMER" ]]; then
+    local cmd_time=$(( ($(date +%s%N) - $TIMER) / 1000000 ))
+    ZSH_THEME_FUNGOID_TIME_PROMPT="%{$ZSH_THEME_FUNGOID_MUTED%}[%D{%H:%M:%S}] %{$ZSH_THEME_FUNGOID_YELLOW%}${cmd_time}ms%{$ZSH_THEME_FUNGOID_FG%}"
+  fi
+}
+ZSH_THEME_FUNGOID_STATUS_PROMPT="%{$ZSH_THEME_FUNGOID_GREEN%}%?%{$ZSH_THEME_FUNGOID_FG%}"
+
+# Actual prompt display
+PROMPT="${ZSH_THEME_FUNGOID_USER_PROMPT} ${ZSH_THEME_FUNGOID_PATH_PROMPT} ${ZSH_THEME_FUNGOID_GIT_PROMPT} ${ZSH_THEME_FUNGOID_TIME_PROMPT}
+${ZSH_THEME_FUNGOID_PROMPT_SYMBOL} "
+
+RPS1="${ZSH_THEME_FUNGOID_STATUS_PROMPT}"
+
+# zsh-syntax-highlighting setup (add to ~/.zshrc after sourcing this theme):
+# ZSH_HIGHLIGHT_STYLES=(
+#   builtin:%F{220}    # yellow like keywords
+#   command:%F{83}     # green like functions
+#   reserved_word:%F{220}   # yellow
+#   word:%F{213}       # magenta
+#   alias:%F{214}      # orange
+#   file:%F{71}        # green
+#   path:%F{245}       # grey
+#   pattern:%F{71}     # green (strings)
+#   argument:%F{50}    # cyan
+#   option:%F{80}      # teal
+#   comment:%F{241}    # dark grey
+#   math:%F{213}       # magenta
+#   unknown_token:%F{245}    # grey
+# )
