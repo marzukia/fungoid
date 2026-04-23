@@ -1,6 +1,36 @@
-# Channel Setup Guide
+# 🍄 Fungoid Channel Setup
 
-Fungoid supports multiple communication channels for logging and interaction.
+<div align="center">
+
+**multi-channel logging for the modern dev**
+
+![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white)
+![Telegram](https://img.shields.io/badge/Telegram-%230088CC.svg?style=for-the-badge&logo=telegram&logoColor=white)
+![Nostr](https://img.shields.io/badge/Nostr-%233cdc50.svg?style=for-the-badge&logo=nostr&logoColor=white)
+
+</div>
+
+---
+
+fungoid supports **discord**, **telegram**, and **nostr** for logging and interaction.
+
+## 🎨 Theme Colors
+
+all channel output uses the fungoid color palette:
+
+```bash
+# orange #ff7800
+echo -e "\033[38;2;255;120;0m→\033[0m discord"
+# green #3cdc50
+echo -e "\033[38;2;60;220;80m✓\033[0m telegram"
+# pink #d966ff
+echo -e "\033[38;2;217;102;255m◉\033[0m nostr"
+```
+
+full color reference: [COLORS.md](../COLORS.md)
+
+
+---
 
 ## Discord
 
@@ -26,7 +56,7 @@ Fungoid supports multiple communication channels for logging and interaction.
 
 ### Usage
 
-The bot will log messages and can respond to commands in the configured channel.
+the bot will log messages and can respond to commands in the configured channel.
 
 ---
 
@@ -52,7 +82,7 @@ The bot will log messages and can respond to commands in the configured channel.
 
 ### Usage
 
-Send messages to your bot and it will log them to the configured chat.
+send messages to your bot and it will log them to the configured chat.
 
 ---
 
@@ -77,13 +107,13 @@ Send messages to your bot and it will log them to the configured chat.
 
 ### Usage
 
-Messages are logged to the Nostr network via the configured relay.
+messages are logged to the nostr network via the configured relay.
 
 ---
 
 ## Multi-Channel
 
-You can enable multiple channels simultaneously. Messages will be logged to all active channels.
+you can enable multiple channels simultaneously. messages will be logged to all active channels.
 
 ```bash
 # Enable all channels
@@ -99,26 +129,26 @@ export NOSTR_RELAY="wss://relay.damus.io"
 
 ## Security
 
-- **Never commit tokens to git**
-- Use environment variables or a `.env` file (add to `.gitignore`)
-- Rotate tokens regularly
-- Use separate bots for development and production
+- **never commit tokens to git**
+- use environment variables or a `.env` file (add to `.gitignore`)
+- rotate tokens regularly
+- use separate bots for development and production
 
 ---
 
 ## Troubleshooting
 
-**Discord bot not responding:**
-- Check bot permissions in server settings
-- Verify the channel ID is correct
-- Ensure bot token is valid
+**discord bot not responding:**
+- check bot permissions in server settings
+- verify the channel ID is correct
+- ensure bot token is valid
 
-**Telegram messages not sending:**
-- Bot must be started (send any message to it first)
-- Chat ID must be correct
-- Check network connectivity
+**telegram messages not sending:**
+- bot must be started (send any message to it first)
+- chat ID must be correct
+- check network connectivity
 
-**Nostr not publishing:**
-- Verify private key format (nsec)
-- Check relay is reachable
-- Ensure network connectivity
+**nostr not publishing:**
+- verify private key format (nsec)
+- check relay is reachable
+- ensure network connectivity
