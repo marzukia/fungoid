@@ -95,6 +95,57 @@ The Oh My Zsh theme provides:
 - [Color Channels](channels.md)
 - [Contributing](CONTRIBUTING.md)
 - [Changelog](CHANGELOG.md)
+## Documentation
+
+- [Installation Guide](INSTALL.md)
+- [Color Palette](COLORS.md)
+- [Color Channels](channels.md)
+- [Contributing](CONTRIBUTING.md)
+- [Changelog](CHANGELOG.md)
+
+## Development
+
+### Structure
+
+```
+fungoid/
+├── iterm/                    # iTerm2 color scheme
+│   └── Fungoid.itermcolors
+├── oh-my-zsh/custom/themes/  # Zsh prompt theme
+│   └── fungoid.zsh-theme
+├── vscode/fungoid-vscode-theme/  # VSCode extension
+│   ├── themes/fungoid.json
+│   ├── package.json
+│   └── README.md
+├── docs/                     # Documentation
+│   └── channels.md           # Channel setup guides
+├── assets/                   # Logos and branding
+├── screenshots/              # Theme screenshots
+├── CHANGELOG.md              # Version history
+├── CONTRIBUTING.md           # Contribution guidelines
+├── INSTALL.md                # Detailed installation
+└── LICENSE                   # MIT License
+```
+
+### Testing
+
+After making changes:
+
+1. **iTerm**: Import the `.itermcolors` file and test with various commands
+2. **Zsh**: Copy to `~/.oh-my-zsh/custom/themes/` and test git operations
+3. **VSCode**: Run `vsce package` and install with `code --install-extension`
+
+## Channel Setup
+
+Set up discord, telegram, or nostr integration: [channels.md](channels.md)
+
+## Contributing
+
+Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+## Changelog
+
+See [CHANGELOG.md](CHANGELOG.md) for version history.
 
 ## License
 
