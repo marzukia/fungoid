@@ -14,6 +14,12 @@ theme:
       toggle:
         icon: material/brightness-7
         name: switch to light mode
+    - scheme: default
+      primary: blue grey
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: switch to dark mode
   default_scheme: slate
   features:
     - navigation.tabs
