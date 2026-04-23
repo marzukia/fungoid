@@ -47,18 +47,17 @@ ZSH_THEME_FUNGOID_PROMPT_LEFT="%{$ZSH_THEME_FUNGOID_ORANGE%}$ZSH_THEME_FUNGOID_P
 ZSH_THEME_FUNGOID_PROMPT_RIGHT="%{$ZSH_THEME_FUNGOID_MUTED%}$(git_prompt_status)%{$ZSH_THEME_FUNGOID_GREEN%}%D{%H:%M:%S}%{$ZSH_THEME_FUNGOID_FG%}"
 
 # Prompt setup
+# Prompt setup
 function fungoid_prompt_setup() {
   # Enable git prompt
   zstyle ':vcs_info:git:*' formats '%b'
   
   # Set prompt
-  precmd_functions+=(fungoid_precmd)
-  precmd
+  PROMPT="%{$ZSH_THEME_FUNGOID_ORANGE%}»%{$ZSH_THEME_FUNGOID_FG%} "
 }
 
 function fungoid_precmd() {
   RPROMPT="%{$ZSH_THEME_FUNGOID_MUTED%}$(git_prompt_status)%{$ZSH_THEME_FUNGOID_GREEN%}%D{%H:%M:%S}%{$ZSH_THEME_FUNGOID_FG%}"
-  PROMPT="%{$ZSH_THEME_FUNGOID_ORANGE%}»%{$ZSH_THEME_FUNGOID_FG%} "
 }
 
 # Git prompt info
@@ -71,10 +70,10 @@ function git_prompt_info() {
 
 # Git prompt status
 function git_prompt_status() {
-  local status=$(git status --porcelain 2>/dev/null)
+  local status_output=$(git status --porcelain 2>/dev/null)
   local ret=""
-  
-  [[ -n $status ]] && ret+="%{$ZSH_THEME_FUNGOID_ORANGE%}✗"
+
+  [[ -n $status_output ]] && ret+="%{$ZSH_THEME_FUNGOID_ORANGE%}✗"
   [[ $(git diff --cached --quiet 2>/dev/null) -eq 1 ]] && ret+="%{$ZSH_THEME_FUNGOID_TEAL%}+"
   
   echo $ret
