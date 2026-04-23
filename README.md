@@ -100,6 +100,8 @@ fungoid/
 │   ├── themes/fungoid.json
 │   ├── package.json
 │   └── README.md
+├── docs/                     # Documentation
+│   └── channels.md           # Channel setup guides
 ├── assets/                   # Logos and branding
 ├── screenshots/              # Theme screenshots
 ├── CHANGELOG.md              # Version history
@@ -115,6 +117,10 @@ After making changes:
 1. **iTerm**: Import the `.itermcolors` file and test with various commands
 2. **Zsh**: Copy to `~/.oh-my-zsh/custom/themes/` and test git operations
 3. **VSCode**: Run `vsce package` and install with `code --install-extension`
+
+## Channel Setup
+
+Set up discord, telegram, or nostr integration: [docs/channels.md](docs/channels.md)
 
 ## Contributing
 
