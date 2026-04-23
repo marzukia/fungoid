@@ -1,7 +1,7 @@
 {
   "name": "fungoid-theme",
-  "displayName": "fungoid.theme",
-  "description": "A dark terminal and editor theme with orange and green as dominant brand colors",
+  "displayName": "Fungoid",
+  "description": "A dark terminal and editor theme with orange & green",
   "version": "1.0.0",
   "publisher": "marzukia",
   "icon": "images/fungoid-ext.png",
