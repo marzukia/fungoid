@@ -208,7 +208,7 @@
     },
     {
       "scope": "string",
-      "settings": { "foreground": "#3cdc50" }
+      "settings": { "foreground": "#808070" }
     },
     {
       "scope": "constant.character.escape",
