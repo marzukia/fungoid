@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/marzukia/fungoid/main/assets/fungoid.png" alt="Fungoid Theme" height="64" align="right">
 
-A dark theme with orange (#ff7800) and green (#3cdc50) as dominant brand colors, inspired by Dracula's syntax highlighting philosophy with custom complementary colors.
+A dark theme with orange (#ff7800) and green (#3cdc50) as dominant brand colors, featuring Dracula-inspired syntax highlighting with custom complementary colors.
 
 ## Screenshots
 
@@ -22,7 +22,7 @@ A dark theme with orange (#ff7800) and green (#3cdc50) as dominant brand colors,
   - Cyan: `#00d296` (accents, decorations)
   - Purple: `#a855f7` (operators)
   - Muted Grey: `#a09080` (comments, punctuation)
-  - Yellow: `#ffbe00` (secondary highlights)
+  - Yellow: `#ffbe00` (secondary highs)
   - Red: `#ff5a5a` (errors, warnings)
 
 ## Installation
@@ -40,7 +40,7 @@ A dark theme with orange (#ff7800) and green (#3cdc50) as dominant brand colors,
 1. Copy the `fungoid-vscode-theme` folder to your VSCode extensions directory:
    - **Linux**: `~/.vscode/extensions/`
    - **macOS**: `~/.vscode/extensions/`
-   - **Windows**: `%USERPROFILE%\.vscode\extensions\`
+   - **Windows**: `%USERPROFILE%\.vscode\extensions/`
 2. Reload VSCode
 3. Press `Ctrl+K Ctrl+T` and select "Fungoid"
 
@@ -133,4 +133,3 @@ MIT License - see [LICENSE](https://github.com/marzukia/fungoid/blob/main/LICENS
 
 - [Fungoid iTerm2 Theme](https://github.com/marzukia/fungoid/tree/main/iterm)
 - [Fungoid Oh My Zsh Theme](https://github.com/marzukia/fungoid/tree/main/oh-my-zsh)
-
