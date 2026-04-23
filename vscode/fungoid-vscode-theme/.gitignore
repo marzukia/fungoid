@@ -1,0 +1,22 @@
+# VSCode Extension Build
+*.vsix
+
+# Node modules
+node_modules/
+
+# VSCode cache
+.vscode-test/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Screenshots (to be filled)
+screenshots/*.png
+screenshots/*.jpg
+screenshots/*.gif
+
+# Assets (to be filled)
+assets/*.png
+assets/*.jpg
+assets/*.svg

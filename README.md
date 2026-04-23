@@ -1,6 +1,35 @@
-# <img src="assets/fungoid.png" alt="fungoid. theme" height='64'>
+# <img src="assets/fungoid.png" alt="fungoid. theme" height="64">
 
-A dark terminal theme with orange and green as dominant brand colors.
+A dark terminal and editor theme with orange (#ff7800) and green (#3cdc50) as dominant brand colors. Designed for developers who want a cohesive aesthetic across their entire development environment.
+
+## Screenshots
+
+*Coming soon - terminal prompt, syntax highlighting examples, and git status displays*
+
+## Features
+
+- **Cohesive Design**: Matching themes for iTerm2, Oh My Zsh, and VSCode
+- **Dracula-Inspired Syntax**: Clear, readable syntax highlighting with custom color palette
+- **Optimized Performance**: Lightweight theme files with no redundant definitions
+- **Git Integration**: Visual git status indicators in the prompt
+- **Timestamp Display**: Green timestamp for easy command tracking
+- **Exit Code Indicators**: Red indicators for failed commands
+- **Custom Font Support**: Works with any monospace font, optimized for Nerd Fonts
+
+## Color Palette
+
+| Role | Color | Hex Code | Usage |
+|------|-------|----------|-------|
+| **Primary Orange** | <span style="color:#ff7800">█</span> | `#ff7800` | Prompts, keywords, highlights |
+| **Primary Green** | <span style="color:#3cdc50">█</span> | `#3cdc50` | Timestamps, success, strings |
+| **Pink** | <span style="color:#d966ff">█</span> | `#d966ff` | Types, classes |
+| **Cyan** | <span style="color:#00d296">█</span> | `#00d296` | Accents, decorations |
+| **Purple** | <span style="color:#a855f7">█</span> | `#a855f7` | Operators |
+| **Muted Grey** | <span style="color:#a09080">█</span> | `#a09080` | Comments, punctuation, paths |
+| **Yellow** | <span style="color:#ffbe00">█</span> | `#ffbe00` | Secondary highlights |
+| **Red** | <span style="color:#ff5a5a">█</span> | `#ff5a5a` | Errors, warnings |
+| **Background** | <span style="color:#1e1e1e">█</span> | `#1e1e1e` | Dark background |
+| **Foreground** | <span style="color:#e8e6e3">█</span> | `#e8e6e3` | Primary text |
 
 ## Install
 
@@ -11,6 +40,8 @@ A dark terminal theme with orange and green as dominant brand colors.
 3. Click "Color Presets..." > "Import..."
 4. Select the downloaded file
 5. Apply the theme to your profile
+
+Detailed guide: [INSTALL.md#iterm2](INSTALL.md#iterm2)
 
 ### Oh My Zsh
 
@@ -29,16 +60,76 @@ ZSH_THEME="fungoid"
 exec zsh
 ```
 
-## Colors
+Detailed guide: [INSTALL.md#oh-my-zsh](INSTALL.md#oh-my-zsh)
 
-- **Orange** `rgb(255, 120, 0)` - Primary accent, prompt glyph, user@host
-- **Green** `rgb(60, 220, 80)` - Primary accent, timestamp, success
-- **Muted** `rgb(105, 85, 65)` - Secondary, path, meta
-- **Red** - Errors
-- **White** - Text
-- **Teal** `rgb(0, 210, 150)` - Git status (staged)
-- **Discord Blue** `rgb(88, 101, 242)` - Special messages
+### VSCode
+
+1. Download the latest `.vsix` file from [releases](https://github.com/marzukia/fungoid/releases)
+2. In VSCode: `Ctrl+Shift+P` > "Extensions: Install from VSIX"
+3. Select the downloaded `.vsix` file
+4. Press `Ctrl+K Ctrl+T` and select "Fungoid"
+
+Alternative: Install from the [VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=marzukia.fungoid-theme)
+
+Detailed guide: [vscode/fungoid-vscode-theme/README.md](vscode/fungoid-vscode-theme/README.md)
+
+## Prompt Features
+
+The Oh My Zsh theme provides:
+
+- **Timestamp**: Green time display (HH:MM:SS format)
+- **User@Host**: Orange username and hostname
+- **Path**: Muted grey current directory with git branch
+- **Git Status**: 
+  - Teal for staged changes
+  - Orange for modified files
+  - Red for untracked files
+- **Exit Code**: Red indicator on command failure
+- **Prompt Glyphs**: Custom arrow glyphs (requires Nerd Font)
+
+## Development
+
+### Structure
+
+```
+fungoid/
+├── iterm/                    # iTerm2 color scheme
+│   └── Fungoid.itermcolors
+├── oh-my-zsh/custom/themes/  # Zsh prompt theme
+│   └── fungoid.zsh-theme
+├── vscode/fungoid-vscode-theme/  # VSCode extension
+│   ├── themes/fungoid.json
+│   ├── package.json
+│   └── README.md
+├── assets/                   # Logos and branding
+├── screenshots/              # Theme screenshots
+├── CHANGELOG.md              # Version history
+├── CONTRIBUTING.md           # Contribution guidelines
+├── INSTALL.md                # Detailed installation
+└── LICENSE                   # MIT License
+```
+
+### Testing
+
+After making changes:
+
+1. **iTerm**: Import the `.itermcolors` file and test with various commands
+2. **Zsh**: Copy to `~/.oh-my-zsh/custom/themes/` and test git operations
+3. **VSCode**: Run `vsce package` and install with `code --install-extension`
+
+## Contributing
+
+Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+## Changelog
+
+See [CHANGELOG.md](CHANGELOG.md) for version history.
 
 ## License
 
-MIT License
+MIT License - see [LICENSE](LICENSE) for details.
+
+## Related Projects
+
+- [Fungoid TUI](https://github.com/marzukia/fungoid) - The underlying terminal application
+- [Dracula Theme](https://draculatheme.com) - Inspiration for syntax highlighting philosophy
