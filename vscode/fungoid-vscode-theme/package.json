@@ -1,0 +1,22 @@
+{
+  "name": "fungoid-theme",
+  "displayName": "Fungoid Theme",
+  "description": "Orange and green dominant theme for VSCode",
+  "version": "1.0.0",
+  "publisher": "fungoid",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Fungoid",
+        "uiTheme": "vs-dark",
+        "path": "./themes/fungoid.json"
+      }
+    ]
+  }
+}
