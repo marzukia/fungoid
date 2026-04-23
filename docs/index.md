@@ -20,10 +20,10 @@ A dark terminal and editor theme with **orange (#ff7800)** and **green (#3cdc50)
 <div align="center">
 
 ### iTerm2
-![iTerm2 Screenshot](../screenshots/iterm2.png)
+![iTerm2 Screenshot](screenshots/iterm2.png)
 
 ### VSCode
-![VSCode Screenshot](../screenshots/vscode.png)
+![VSCode Screenshot](screenshots/vscode.png)
 
 </div>
 
@@ -117,7 +117,6 @@ The Oh My Zsh theme provides:
 
 - [📥 Installation Guide](INSTALL.md)
 - [🎨 Color Palette](COLORS.md)
-- [🔧 Color Channels](channels.md)
 - [🤝 Contributing](CONTRIBUTING.md)
 - [📝 Changelog](CHANGELOG.md)
 
@@ -138,7 +137,6 @@ fungoid/
 │   ├── package.json
 │   └── README.md
 ├── docs/                     # Documentation
-│   └── channels.md           # Channel setup guides
 ├── assets/                   # Logos and branding
 ├── screenshots/              # Theme screenshots
 ├── CHANGELOG.md              # Version history
@@ -154,12 +152,6 @@ After making changes:
 1. **iTerm**: Import the `.itermcolors` file and test with various commands
 2. **Zsh**: Copy to `~/.oh-my-zsh/custom/themes/` and test git operations
 3. **VSCode**: Run `vsce package` and install with `code --install-extension`
-
----
-
-## 🔌 Channel Setup
-
-Set up discord, telegram, or nostr integration: [channels.md](channels.md)
 
 ---
 
@@ -183,5 +175,4 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ## 🔗 Related Projects
 
-- [Fungoid TUI](https://github.com/marzukia/fungoid) — The underlying terminal application
 - [Dracula Theme](https://draculatheme.com) — Inspiration for syntax highlighting philosophy
