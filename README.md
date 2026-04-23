@@ -17,18 +17,18 @@ A dark terminal and editor theme with orange (#ff7800) and green (#3cdc50) as do
 
 ## Color Palette
 
-| Role | Color | Hex Code | Usage |
-|------|-------|----------|-------|
-| **Primary Orange** | <span style="color:#ff7800">█</span> | `#ff7800` | Prompts, keywords, highlights |
-| **Primary Green** | <span style="color:#3cdc50">█</span> | `#3cdc50` | Timestamps, success, strings |
-| **Pink** | <span style="color:#d966ff">█</span> | `#d966ff` | Types, classes |
-| **Cyan** | <span style="color:#00d296">█</span> | `#00d296` | Accents, decorations |
-| **Purple** | <span style="color:#a855f7">█</span> | `#a855f7` | Operators |
-| **Muted Grey** | <span style="color:#a09080">█</span> | `#a09080` | Comments, punctuation, paths |
-| **Yellow** | <span style="color:#ffbe00">█</span> | `#ffbe00` | Secondary highlights |
-| **Red** | <span style="color:#ff5a5a">█</span> | `#ff5a5a` | Errors, warnings |
-| **Background** | <span style="color:#1e1e1e">█</span> | `#1e1e1e` | Dark background |
-| **Foreground** | <span style="color:#e8e6e3">█</span> | `#e8e6e3` | Primary text |
+| Role | Hex Code | Usage |
+|------|----------|-------|
+| **Primary Orange** | `#ff7800` | Prompts, keywords, highlights |
+| **Primary Green** | `#3cdc50` | Timestamps, success, strings |
+| **Pink** | `#d966ff` | Types, classes |
+| **Cyan** | `#00d296` | Accents, decorations |
+| **Purple** | `#a855f7` | Operators |
+| **Muted Grey** | `#a09080` | Comments, punctuation, paths |
+| **Yellow** | `#ffbe00` | Secondary highlights |
+| **Red** | `#ff5a5a` | Errors, warnings |
+| **Background** | `#1e1e1e` | Dark background |
+| **Foreground** | `#e8e6e3` | Primary text |
 
 ## Install
 

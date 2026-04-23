@@ -1,0 +1,56 @@
+site_name: Fungoid Theme
+site_description: A dark, cozy terminal theme for iTerm, Oh My Zsh, and VS Code
+site_author: andryo
+repo_url: https://github.com/marzukia/fungoid
+repo_name: marzukia/fungoid
+docs_dir: docs
+
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: orange
+      accent: green
+      toggle:
+        icon: material/brightness-7
+        name: switch to light mode
+    - scheme: default
+      primary: orange
+      accent: green
+      toggle:
+        icon: material/brightness-4
+        name: switch to dark mode
+  default_scheme: slate
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - toc.integrate
+    - search.suggest
+
+extra_css:
+  - assets/styles.css
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Colors: COLORS.md
+  - Installation: INSTALL.md
+  - Documentation:
+      - Channels: channels.md
+  - Contributing: CONTRIBUTING.md
+  - Changelog: CHANGELOG.md

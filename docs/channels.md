@@ -27,7 +27,7 @@ echo -e "\033[38;2;60;220;80m✓\033[0m telegram"
 echo -e "\033[38;2;217;102;255m◉\033[0m nostr"
 ```
 
-full color reference: [COLORS.md](../COLORS.md)
+full color reference: [COLORS.md](COLORS.md)
 
 
 ---
