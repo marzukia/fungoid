@@ -165,11 +165,28 @@ pre code {
   color: #1e1e1e;
 }
 
+/* Headers */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6 {
+  color: #ff7800;
+  font-weight: 700;
+}
+
+.md-typeset h1 {
+  border-bottom: 2px solid #ff7800;
+  padding-bottom: 0.3em;
+}
+
 /* Links */
 .md-typeset a {
   color: #ff7800;
   text-decoration: none;
 }
+
 
 .md-typeset a:hover {
   text-decoration: underline;
