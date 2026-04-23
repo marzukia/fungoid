@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/marzukia/fungoid/main/assets/fungoid.png" alt="Fungoid Theme" height="64" align="right">
 
-A dark theme with orange (#ff7800) and green (#3cdc50) as dominant brand colors, matching the Fungoid TUI aesthetic. Inspired by Dracula's syntax highlighting philosophy with custom complementary colors.
+A dark theme with orange (#ff7800) and green (#3cdc50) as dominant brand colors, inspired by Dracula's syntax highlighting philosophy with custom complementary colors.
 
 ## Screenshots
 
@@ -133,4 +133,4 @@ MIT License - see [LICENSE](https://github.com/marzukia/fungoid/blob/main/LICENS
 
 - [Fungoid iTerm2 Theme](https://github.com/marzukia/fungoid/tree/main/iterm)
 - [Fungoid Oh My Zsh Theme](https://github.com/marzukia/fungoid/tree/main/oh-my-zsh)
-- [Fungoid TUI](https://github.com/marzukia/fungoid)
+

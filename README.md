@@ -136,5 +136,5 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ## Related Projects
 
-- [Fungoid TUI](https://github.com/marzukia/fungoid) - The underlying terminal application
+
 - [Dracula Theme](https://draculatheme.com) - Inspiration for syntax highlighting philosophy
