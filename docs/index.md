@@ -1,8 +1,8 @@
-# <img src="assets/fungoid.png" alt="fungoid theme" height="60">
+# <img src="assets/logo-header.png" alt="fungoid theme" height="60">
 
 <div align="center">
 
-**a dark terminal & editor theme**  
+**a dark terminal & editor theme**
 *orange & green, built for developers*
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-3cdc50.svg)](https://github.com/marzukia/fungoid/blob/main/LICENSE)
