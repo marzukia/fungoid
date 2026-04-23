@@ -220,12 +220,6 @@
       }
     },
     {
-      "scope": "string.quoted",
-      "settings": {
-        "foreground": "#a09080"
-      }
-    },
-    {
       "scope": "constant.character.escape",
       "settings": {
         "foreground": "#ffbe00"
@@ -272,6 +266,16 @@
       "scope": [
         "constant",
         "constant.numeric"
+      ],
+      "settings": {
+        "foreground": "#ffbe00"
+      }
+    },
+    {
+      "scope": [
+        "constant.language",
+        "constant.character",
+        "constant.other"
       ],
       "settings": {
         "foreground": "#ffbe00"
