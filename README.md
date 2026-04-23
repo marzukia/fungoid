@@ -1,4 +1,4 @@
-# 🍊🌿 Fungoid Theme
+# <img src="assets/fungoid.png" alt="Fungoid" width="64" height="64"> Fungoid Theme
 
 A dark terminal theme with orange and green as dominant brand colors.
 
