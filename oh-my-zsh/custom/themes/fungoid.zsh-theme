@@ -51,18 +51,14 @@ ZSH_THEME_FUNGOID_PROMPT_LEFT="%{$ZSH_THEME_FUNGOID_ORANGE%}$ZSH_THEME_FUNGOID_P
 ZSH_THEME_FUNGOID_PROMPT_RIGHT="%{$ZSH_THEME_FUNGOID_CYAN%}%m%{$ZSH_THEME_FUNGOID_MUTED%}$(git_prompt_info)%{$ZSH_THEME_FUNGOID_GREEN%}%D{%H:%M:%S}%{$ZSH_THEME_FUNGOID_FG%}"
 
 # Prompt setup
-function fungoid_prompt_setup() {
-  # Enable git prompt
-  zstyle ':vcs_info:git:*' formats '%b'
-  
-  # Set prompt
-  PROMPT="%{$ZSH_THEME_FUNGOID_ORANGE%}»%{$ZSH_THEME_FUNGOID_FG%} "
-}
-
 function fungoid_precmd() {
+  # Left prompt
+  PROMPT="%{$ZSH_THEME_FUNGOID_ORANGE%}»%{$ZSH_THEME_FUNGOID_FG%} "
+  
   # Right prompt: hostname | branch | time
   RPROMPT="%{$ZSH_THEME_FUNGOID_CYAN%}%m%{$ZSH_THEME_FUNGOID_MUTED%}$(git_prompt_info)%{$ZSH_THEME_FUNGOID_GREEN%}%D{%H:%M:%S}%{$ZSH_THEME_FUNGOID_FG%}"
 }
 
-# Register the theme
+# Register the theme and enable precmd hook
 zstyle ':prompt:fungoid:setup' answer 'yes'
+precmd_functions+=('fungoid_precmd')
