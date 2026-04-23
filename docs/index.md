@@ -95,13 +95,6 @@ The Oh My Zsh theme provides:
 - [Color Channels](channels.md)
 - [Contributing](CONTRIBUTING.md)
 - [Changelog](CHANGELOG.md)
-## Documentation
-
-- [Installation Guide](INSTALL.md)
-- [Color Palette](COLORS.md)
-- [Color Channels](channels.md)
-- [Contributing](CONTRIBUTING.md)
-- [Changelog](CHANGELOG.md)
 
 ## Development
 
@@ -149,4 +142,9 @@ See [CHANGELOG.md](CHANGELOG.md) for version history.
 
 ## License
 
-MIT License
+MIT License - see [LICENSE](LICENSE) for details.
+
+## Related Projects
+
+- [Fungoid TUI](https://github.com/marzukia/fungoid) - The underlying terminal application
+- [Dracula Theme](https://draculatheme.com) - Inspiration for syntax highlighting philosophy
