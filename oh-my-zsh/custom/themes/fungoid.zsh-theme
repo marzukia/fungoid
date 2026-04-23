@@ -13,7 +13,7 @@ ZSH_THEME_FUNGOID_FG="%F{254}"      # Warm white
 
 # Brand colors - orange and green dominant
 ZSH_THEME_FUNGOID_ORANGE="%F{208}"  # rgb(255, 120, 0) - primary accent
-ZSH_THEME_FUNGOID_GREEN="%F{70}"    # rgb(60, 220, 80) - primary accent
+ZSH_THEME_FUNGOID_GREEN="%F{2}"    # rgb(60, 220, 80) - primary accent
 ZSH_THEME_FUNGOID_MUTED="%F{241}"   # rgb(105, 85, 65) - secondary
 ZSH_THEME_FUNGOID_RED="%F{196}"     # Red - errors
 ZSH_THEME_FUNGOID_WHITE="%F{254}"   # White
