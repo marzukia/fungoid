@@ -246,6 +246,6 @@ rm -rf ~/.oh-my-zsh/custom/themes/fungoid
 
 ## Next Steps
 
-- Check out the [README.md](README.md) for color palette and features
+- Check out the [COLORS.md](COLORS.md) for color palette and features
 - See [CONTRIBUTING.md](CONTRIBUTING.md) to help improve the theme
 - View [CHANGELOG.md](CHANGELOG.md) for version history

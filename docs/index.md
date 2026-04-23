@@ -41,18 +41,16 @@ See [COLORS.md](COLORS.md) for the full color reference.
 
 ## Screenshots
 
-![Terminal Screenshot](../screenshots/terminal.png)
-![VS Code Screenshot](../screenshots/vscode.png)
-![Zsh Prompt Screenshot](../screenshots/zsh.png)
+_screenshots will be added soon_
 
 ## Documentation
 
 - [Installation Guide](INSTALL.md)
 - [Color Channels](channels.md)
 - [Contributing](CONTRIBUTING.md)
-- [Changelog](CHANGE.md)
+- [Changelog](CHANGELOG.md)
 
 ## License
 
-MIT License - see [LICENSE](../LICENSE) for details
+MIT License
 
