@@ -1,15 +1,13 @@
 # <img src="assets/logo-header.png" alt="fungoid theme" height="32">
 
-<div align="center">
 
 **a dark terminal & editor theme**
+
 *orange & green, built for developers*
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-3cdc50.svg)](https://github.com/marzukia/fungoid/blob/main/LICENSE)
 [![GitHub Repo](https://img.shields.io/badge/GitHub-repo-ff7800.svg)](https://github.com/marzukia/fungoid)
 [![VSCode Marketplace](https://img.shields.io/badge/VSCode-Marketplace-00d296.svg)](https://marketplace.visualstudio.com/items?itemName=marzukia.fungoid-theme)
-
-</div>
 
 ---
 
@@ -17,15 +15,12 @@ A dark terminal and editor theme with **orange (#ff7800)** and **green (#3cdc50)
 
 ## Screenshots
 
-<div align="center">
-
 ### iTerm2
-![iTerm2 Screenshot](../screenshots/iterm2.png)
+![iTerm2 Screenshot](assets/iterm2.png)
 
 ### VSCode
-![VSCode Screenshot](../screenshots/vscode.png)
+![VSCode Screenshot](assets/vscode.png)
 
-</div>
 
 ## Features
 
