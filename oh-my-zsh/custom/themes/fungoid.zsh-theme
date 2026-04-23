@@ -36,41 +36,21 @@ ZSH_THEME_FUNGOID_STRING="%F{#3cdc50}"    # Green (strings)
 ZSH_THEME_FUNGOID_PROMPT_SYMBOL="»"
 ZSH_THEME_FUNGOID_PROMPT_SECONDARY="»"
 
-# Prompt elements
+# Prompt-elements
 ZSH_THEME_FUNGOID_USER_PROMPT="%{$ZSH_THEME_FUNGOID_ORANGE%}%n%{$ZSH_THEME_FUNGOID_FG%}@%{$ZSH_THEME_FUNGOID_BLUE%}%m"
 ZSH_THEME_FUNGOID_PATH_PROMPT="%{$ZSH_THEME_FUNGOID_MUTED%}%~"
 ZSH_THEME_FUNGOID_GIT_PROMPT="%{$ZSH_THEME_FUNGOID_TEAL%}$(git_prompt_info)%{$ZSH_THEME_FUNGOID_FG%}"
 ZSH_THEME_FUNGOID_TIME_PROMPT="%{$ZSH_THEME_FUNGOID_MUTED%}[%D{%H:%M:%S}]"
 # Register the theme and enable precmd hook
 zstyle ':prompt:fungoid:setup' answer 'yes'
-precmd_functions+=('fungoid_precmd')
 
-# Add timestamp and git status to precmd
-fungoid_precmd() {
-  # Update git status
-  vcs_info
-}
-
-# Preexec for command timing
-preexec_functions+=('preexec_timer')
-preexec_timer() {
-  TIMER=$(date +%s%N)
-}
-
-precmd_functions+=('precmd_timer')
-precmd_timer() {
-  if [[ -n "$TIMER" ]]; then
-    local cmd_time=$(( ($(date +%s%N) - $TIMER) / 1000000 ))
-    ZSH_THEME_FUNGOID_TIME_PROMPT="%{$ZSH_THEME_FUNGOID_MUTED%}[%D{%H:%M:%S}] %{$ZSH_THEME_FUNGOID_YELLOW%}${cmd_time}ms%{$ZSH_THEME_FUNGOID_FG%}"
-  fi
-}
-ZSH_THEME_FUNGOID_STATUS_PROMPT="%{$ZSH_THEME_FUNGOID_GREEN%}%?%{$ZSH_THEME_FUNGOID_FG%}"
+# No vcs_info - using oh-my-zsh git plugin instead
 
 # Actual prompt display
 PROMPT="${ZSH_THEME_FUNGOID_USER_PROMPT} ${ZSH_THEME_FUNGOID_PATH_PROMPT} ${ZSH_THEME_FUNGOID_GIT_PROMPT} ${ZSH_THEME_FUNGOID_TIME_PROMPT}
 ${ZSH_THEME_FUNGOID_PROMPT_SYMBOL} "
 
-RPS1="${ZSH_THEME_FUNGOID_STATUS_PROMPT}"
+RPS1=""
 
 # zsh-syntax-highlighting setup (add to ~/.zshrc after sourcing this theme):
 # ZSH_HIGHLIGHT_STYLES=(
