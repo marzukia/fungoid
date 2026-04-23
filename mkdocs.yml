@@ -8,17 +8,12 @@ theme:
   name: material
   palette:
     - scheme: slate
-      primary: custom
-      accent: custom
-      toggle:
-        icon: material/brightness-4
-        name: light mode
-    - scheme: default
-      primary: custom
-      accent: custom
+      primary: blue grey
+      accent: cyan
       toggle:
         icon: material/brightness-7
-        name: dark mode
+        name: switch to light mode
+  default_scheme: slate
   features:
     - navigation.tabs
     - navigation.tabs.sticky
