@@ -6,7 +6,7 @@ A dark theme with orange (#ff7800) and green (#3cdc50) as dominant brand colors,
 
 ## Screenshots
 
-*Coming soon - screenshots of syntax highlighting in various languages*
+![VSCode Screenshot](../../screenshots/vscode.png)
 
 ## Features
 

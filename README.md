@@ -4,10 +4,9 @@ A dark terminal and editor theme with orange (#ff7800) and green (#3cdc50) as do
 
 ## Screenshots
 
-*Coming soon - terminal prompt, syntax highlighting examples, and git status displays*
-
+![iTerm2 Screenshot](screenshots/iterm2.png)
+![VSCode Screenshot](screenshots/vscode.png)
 ## Features
-
 - **Cohesive Design**: Matching themes for iTerm2, Oh My Zsh, and VSCode
 - **Dracula-Inspired Syntax**: Clear, readable syntax highlighting with custom color palette
 - **Optimized Performance**: Lightweight theme files with no redundant definitions
