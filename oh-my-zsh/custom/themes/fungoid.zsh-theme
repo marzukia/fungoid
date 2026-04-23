@@ -15,7 +15,7 @@ ZSH_THEME_FUNGOID_FG="%F{231}"      # Bright white
 ZSH_THEME_FUNGOID_ORANGE="%F{214}"  # Bright orange
 ZSH_THEME_FUNGOID_GREEN="%F{83}"    # Bright green
 ZSH_THEME_FUNGOID_MUTED="%F{245}"   # Light grey
-ZSH_THEME_FUNGOID_RED="%F{196}"    # Bright red
+ZSH_THEME_FUNGOID_RED="%F{167}"    # Red matching vscode #ff5a5a
 ZSH_THEME_FUNGOID_WHITE="%F{231}"   # White
 
 # Accent colors
