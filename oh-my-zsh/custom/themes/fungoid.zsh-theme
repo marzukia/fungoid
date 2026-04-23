@@ -8,7 +8,7 @@ ZSH_THEME_FUNGOID_NAME="fungoid"
 
 # Color definitions
 # Background/Foreground
-ZSH_THEME_FUNGOID_BG="%K{235}"      # Dark warm bg (rgb 22,18,12)
+ZSH_THEME_FUNGOID_BG="%K{236}"      # Dark grey bg (rgb 30,30,30)
 ZSH_THEME_FUNGOID_FG="%F{254}"      # Warm white
 
 # Brand colors - orange and green dominant
