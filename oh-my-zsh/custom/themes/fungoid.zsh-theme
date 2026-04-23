@@ -47,7 +47,7 @@ ZSH_THEME_FUNGOID_PROMPT_LEFT="%{$ZSH_THEME_FUNGOID_ORANGE%}$ZSH_THEME_FUNGOID_P
 ZSH_THEME_FUNGOID_PROMPT_RIGHT="%{$ZSH_THEME_FUNGOID_MUTED%}$(git_prompt_status)%{$ZSH_THEME_FUNGOID_GREEN%}%D{%H:%M:%S}%{$ZSH_THEME_FUNGOID_FG%}"
 
 # Prompt setup
-# Prompt setup
+
 function fungoid_prompt_setup() {
   # Enable git prompt
   zstyle ':vcs_info:git:*' formats '%b'
@@ -79,5 +79,5 @@ function git_prompt_status() {
   echo $ret
 }
 
-# Load the theme
-fungoid_prompt_setup
+
+
