@@ -20,10 +20,10 @@ A dark terminal and editor theme with **orange (#ff7800)** and **green (#3cdc50)
 <div align="center">
 
 ### iTerm2
-![iTerm2 Screenshot](../screenshots/iterm2.png)
+![iTerm2 Screenshot](screenshots/iterm2.png)
 
 ### VSCode
-![VSCode Screenshot](../screenshots/vscode.png)
+![VSCode Screenshot](screenshots/vscode.png)
 
 </div>
 
