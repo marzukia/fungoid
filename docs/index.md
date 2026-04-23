@@ -15,21 +15,19 @@
 
 A dark terminal and editor theme with **orange (#ff7800)** and **green (#3cdc50)** as dominant brand colors. Designed for developers who want a cohesive aesthetic across their entire development environment.
 
-## 📸 Screenshots
+## Screenshots
 
 <div align="center">
 
 ### iTerm2
-![iTerm2 Screenshot](screenshots/iterm2.png)
+![iTerm2 Screenshot](../screenshots/iterm2.png)
 
 ### VSCode
-![VSCode Screenshot](screenshots/vscode.png)
+![VSCode Screenshot](../screenshots/vscode.png)
 
 </div>
 
----
-
-## ✨ Features
+## Features
 
 | Feature | Description |
 |---------|-------------|
@@ -41,9 +39,7 @@ A dark terminal and editor theme with **orange (#ff7800)** and **green (#3cdc50)
 | **Exit Code Indicators** | Red indicators for failed commands |
 | **Custom Font Support** | Works with any monospace font, optimized for Nerd Fonts |
 
----
-
-## 🎨 Color Palette
+## Color Palette
 
 | Role | Color | Hex Code | Usage |
 |------|-------|----------|-------|
@@ -60,7 +56,7 @@ A dark terminal and editor theme with **orange (#ff7800)** and **green (#3cdc50)
 
 ---
 
-## 🚀 Install
+## Install
 
 ### iTerm2
 
@@ -70,7 +66,7 @@ A dark terminal and editor theme with **orange (#ff7800)** and **green (#3cdc50)
 4. Select the downloaded file
 5. Apply the theme to your profile
 
-📖 Detailed guide: [INSTALL.md#iterm2](INSTALL.md#iterm2)
+See [INSTALL.md#iterm2](INSTALL.md#iterm2) for detailed guide.
 
 ### Oh My Zsh
 
@@ -85,7 +81,7 @@ echo 'ZSH_THEME="fungoid"' >> ~/.zshrc
 exec zsh
 ```
 
-📖 Detailed guide: [INSTALL.md#oh-my-zsh](INSTALL.md#oh-my-zsh)
+See [INSTALL.md#oh-my-zsh](INSTALL.md#oh-my-zsh) for detailed guide.
 
 ### VSCode
 
@@ -96,13 +92,11 @@ exec zsh
 
 Or install from the [VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=marzukia.fungoid-theme)
 
-📖 Detailed guide: [vscode/fungoid-vscode-theme/README.md](../vscode/fungoid-vscode-theme/README.md)
+See [vscode/fungoid-vscode-theme/README.md](../vscode/fungoid-vscode-theme/README.md) for detailed guide.
 
 ---
 
-## 💻 Prompt Features
-
-The Oh My Zsh theme provides:
+## Prompt Features
 
 - <span style="color:#3cdc50">**Timestamp**</span> — Green time display (HH:MM:SS format)
 - <span style="color:#ff7800">**User@Host**</span> — Orange username and hostname
@@ -111,18 +105,16 @@ The Oh My Zsh theme provides:
 - <span style="color:#ff5a5a">**Exit Code**</span> — Red indicator on command failure
 - **Prompt Glyphs** — Custom arrow glyphs (requires Nerd Font)
 
----
+## Documentation
 
-## 📚 Documentation
-
-- [📥 Installation Guide](INSTALL.md)
-- [🎨 Color Palette](COLORS.md)
-- [🤝 Contributing](CONTRIBUTING.md)
-- [📝 Changelog](CHANGELOG.md)
+- [Installation Guide](INSTALL.md)
+- [Color Palette](COLORS.md)
+- [Contributing](CONTRIBUTING.md)
+- [Changelog](CHANGELOG.md)
 
 ---
 
-## 🔧 Development
+## Development
 
 ### Structure
 
@@ -153,26 +145,18 @@ After making changes:
 2. **Zsh**: Copy to `~/.oh-my-zsh/custom/themes/` and test git operations
 3. **VSCode**: Run `vsce package` and install with `code --install-extension`
 
----
-
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
----
-
-## 📜 Changelog
+## Changelog
 
 See [CHANGELOG.md](CHANGELOG.md) for version history.
 
----
-
-## 📄 License
+## License
 
 MIT License - see [LICENSE](LICENSE) for details.
 
----
-
-## 🔗 Related Projects
+## Related Projects
 
 - [Dracula Theme](https://draculatheme.com) — Inspiration for syntax highlighting philosophy
